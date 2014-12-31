@@ -23,6 +23,8 @@
     "_": true,
     "app": true,
     "URI":true,
-    "module":true
+    "module":true,
+    "jQuery": true,
+    "$": true
   }
 }

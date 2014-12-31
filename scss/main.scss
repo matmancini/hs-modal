@@ -1,7 +1,9 @@
-html,
-body {
-    height: 100%;
-    margin: 0;
+* {box-sizing: border-box;}
+html, body {height: 100%; margin: 0; }
+input[type="text"] {display: block; width: 100%; border: 1px solid #ccc; padding: 5px;}
+[contenteditable] {
+    border: 1px solid #ccc;
+    padding: 0.5em;
 }
 
 .post-modal {
@@ -27,6 +29,7 @@ body {
     min-height: 500px;
     background: black;
     font-size: 0;
+    overflow: hidden;
 
     img {
         max-width: calc(90vw - 350px);
@@ -35,8 +38,52 @@ body {
 }
 
 .post-modal__sidebar {
-    background: tomato;
+    background: white;
     width: 350px;
+    position: relative;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 1px solid #ccc;
+}
+
+.post-modal__sidebar__wrapper {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.post-modal__sidebar__content {
+    padding: 15px;
+    flex: 0 0 auto;
+    background: rgba(#4cc2cb, 0.2);
+    border-bottom: 1px solid #4cc2cb;
+}
+
+.post-modal__sidebar__comments {
+    display: flex;
+    flex-flow: column-reverse;
+    justify-content: flex-start;
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-size: 12px;
+}
+
+.post-modal__sidebar__comments__input {
+    order: -999;
+    margin: 7px 15px 15px 15px;
+    flex: 1 0 auto;
+}
+
+.post-modal__sidebar__comments__item {
+    background: #ebebeb;
+    margin: 0 15px 1px 15px;
+    padding: .5em;
+    flex: 0 0 auto;
 }
 
 @media (max-width: 944px) {
