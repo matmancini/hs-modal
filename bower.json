@@ -1,0 +1,17 @@
+{
+  "name": "hs-modal",
+  "version": "0.1.0",
+  "homepage": "https://github.com/matmancini/hs-modal",
+  "authors": [
+    "Matias Mancini <info@matiasmancini.com.ar>"
+  ],
+  "description": "Hinch.as Post Modal",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

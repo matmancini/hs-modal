@@ -1,0 +1,28 @@
+{
+  "name": "hs-modal",
+  "version": "0.1.0",
+  "description": "Hinch.as Post Modal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matmancini/hs-modal.git"
+  },
+  "author": "Matias Mancini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matmancini/hs-modal/issues"
+  },
+  "homepage": "https://github.com/matmancini/hs-modal",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^2.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-connect": "^0.9.0",
+    "grunt-contrib-sass": "^0.8.1",
+    "connect-livereload": "^0.5.2"
+  }
+}
