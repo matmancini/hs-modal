@@ -4,7 +4,7 @@ $('document').ready(function () {
 	// var commentList = $('[data-comments]');
 
 	$('[contenteditable]').keypress(function (event) {
-		var value = this.innerText.trim();
+		var value = this.textContent.trim();
 
 		if ( value && event.which === 13 ) {
 			event.preventDefault();
