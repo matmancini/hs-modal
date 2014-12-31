@@ -1,0 +1,57 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.post-modal__modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    background: #444;
+}
+
+.post-modal {
+    display: inline-flex;
+    min-width: 850px;
+}
+
+.post-modal__media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 500px;
+    min-height: 500px;
+    background: black;
+    font-size: 0;
+}
+
+.post-modal__media img {
+    max-width: calc(90vw - 350px);
+    max-height: 90vh;
+}
+
+.post-modal__sidebar {
+    background: tomato;
+    width: 350px;
+}
+
+@media (max-width: 944px) {
+
+    .post-modal__media img {
+        max-width: 500px;
+        height: auto;
+    }
+}
+
+@media (max-height: 556px) {
+
+    .post-modal__media img {
+        max-height: 500px;
+        width: auto;
+    }
+}
+
