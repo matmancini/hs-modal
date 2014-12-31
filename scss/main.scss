@@ -4,6 +4,11 @@ body {
     margin: 0;
 }
 
+.post-modal {
+    display: inline-flex;
+    min-width: 850px;
+}
+
 .post-modal__modal {
     display: flex;
     align-items: center;
@@ -11,11 +16,6 @@ body {
 
     height: 100%;
     background: #444;
-}
-
-.post-modal {
-    display: inline-flex;
-    min-width: 850px;
 }
 
 .post-modal__media {
@@ -27,11 +27,11 @@ body {
     min-height: 500px;
     background: black;
     font-size: 0;
-}
 
-.post-modal__media img {
-    max-width: calc(90vw - 350px);
-    max-height: 90vh;
+    img {
+        max-width: calc(90vw - 350px);
+        max-height: 90vh;
+    }
 }
 
 .post-modal__sidebar {
