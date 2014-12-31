@@ -35,6 +35,16 @@ input[type="text"] {display: block; width: 100%; border: 1px solid #ccc; padding
     img {
         max-width: calc(90vw - 350px);
         max-height: 90vh;
+
+        @media (max-width: 944px) {
+            max-width: 500px;
+            height: auto;
+        }
+
+        @media (max-height: 556px) {
+            max-height: 500px;
+            width: auto;
+        }
     }
 }
 
@@ -67,9 +77,9 @@ input[type="text"] {display: block; width: 100%; border: 1px solid #ccc; padding
 .post-modal__sidebar__comments {
     display: flex;
     flex-flow: column-reverse;
-    justify-content: flex-start;
     flex: 1;
-    overflow-y: auto !important;
+    overflow-x: hidden;
+    overflow-y: auto;
     font-size: 12px;
 }
 
@@ -85,20 +95,3 @@ input[type="text"] {display: block; width: 100%; border: 1px solid #ccc; padding
     padding: .5em;
     flex: 0 0 auto;
 }
-
-@media (max-width: 944px) {
-
-    .post-modal__media img {
-        max-width: 500px;
-        height: auto;
-    }
-}
-
-@media (max-height: 556px) {
-
-    .post-modal__media img {
-        max-height: 500px;
-        width: auto;
-    }
-}
-
